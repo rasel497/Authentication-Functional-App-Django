@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Dashboard</h2>
+
+
+
+{% comment %} {% if user.is_authenticated %}
+    {{user}}
+
+{% endif %} {% endcomment %}
+    
+<h3>{{user}}</h3>
+
+{% endblock content %}
