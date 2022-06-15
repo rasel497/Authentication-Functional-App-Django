@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<form method='post' novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
 
+    {% comment %} <label for="">Username</label> {% endcomment %}
+    {% comment %} <input type="text" name="username"> {% endcomment %}
 
+    <button type='submit'>Register</button>
+</form>
 {% endblock content %}
